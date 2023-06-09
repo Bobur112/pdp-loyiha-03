@@ -1,38 +1,326 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+header {
+  background-color: black;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+a {
+  text-decoration: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
+  padding-top: 30px;
+  padding-bottom: 30px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: space-between;
+  margin: 0 80px 0 80px;
+  border-bottom: 2px solid coral;
+}
+
+.author a {
+  font-size: 24px;
+  color: white;
+}
+.author a:hover {
+  color: coral;
+}
+
+ul {
+  display: flex;
+}
+
+li {
+  list-style-type: none;
+}
+
+li a {
+  color: white;
+  margin-left: 20px;
+
+}
+
+li a:hover{
+  color: coral;
+}
+
+.mainSection{
+  height: 140vh;
+  background-image: url("./Download.png");
+  background-color: black;
+  background-size: cover;
+  position: relative;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+}
+
+.mainSection img {
+  
+  object-fit: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  
+}
+
+.mainSection::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.8); 
+    }
+
+.mainTop {
+  height: 40vh;
+  position: relative;
+}
+
+.mainText {
+  display: flex;
+  justify-content: flex-end;
+  
+  height: 100%;
+  background-color: black;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.mainText h1 {
+  font-size: 64px;
+  margin-bottom: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: coral;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.mainText div {
+  padding:50px 200px;
+}
+
+.authorImg {
+  position: absolute;
+  left: 120px;
+ top: -180px;
+}
+
+.book {
+  position: absolute;
+  width: 70%;
+  height: 60%;
+  background-color: rgba(0, 0, 0, 0.418);
+
+  display: grid;
+  grid-template-columns: 11fr 9fr;
+  
+}
+
+.bookRight {
+  
+  background-color: green;
+  margin: 20px;
+  background-image: url("https://static.wixstatic.com/media/ad420a_ac6bbfd46dbe4c83a234221d29d67791~mv2.png/v1/fill/w_385,h_543,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Screen%20Shot%202021-02-07%20at%209_24_47.png");
+  background-size: cover;
+  background-position: center;
+  
+}
+
+.bookLeft {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.largeText {
+  font-size: 48px;
+}
+
+.bookLeftTop {
+  padding: 80px 140px 20px 40px;
+}
+
+.bookText {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.bookBtn {
+  background-color: initial;
+  color: coral;
+  font-size: 16px;
+  border: 1px solid coral;
+  border-radius: 20px;
+  width: 120px;
+  height: 35px;
+  margin-right: 20px;
+}
+
+.bookLeftBottom {
+  margin-top: 40px;
+  padding-left: 40px;
+}
+
+.articel {
+  padding-left: 80px;
+  padding-right: 80px;
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(13, 13, 27);
+  display: flex;
+  text-align: center;
+  gap: 40px;
+}
+
+.articel div {
+  margin-top: 80px;
+  margin-bottom: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+}
+
+
+.articelSign {
+  font-size: 128px;
+  color: coral;
+  
+}
+
+.articelMain {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+}
+
+.articelBottom {
+  color: coral;
+  
+}
+
+.line {
+  background-color: coral;
+  height: 2px;
+  width: 120px;
+}
+
+.info {
+  background-color: black;
+  padding-top: 80px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.infoTop{
+  text-align: center;
+  
+}
+
+.infoTop h2 {
+  font-size: 40px;
+  color: coral;
+}
+
+.infoTop p {
+  margin-top: 40px;
+  color: white;
+  font-size: 18px;
+  margin-bottom: 80px;
+}
+
+.boxContainer {
+  width: 80%;
+  margin: auto;
+  
+}
+
+.box {
+  
+  margin-bottom: 40px;
+  width: 100%;
+  height: 320px;
+  border: 2px solid white;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  
+}
+
+.boxLast {
+  margin-bottom: 200px;
+}
+
+
+.box p {
+  margin-top: 80px;
+  margin-bottom: 60px;
+  font-size: 24px;
+  color: white;
+}
+
+
+.last {
+  width: 90%;
+  margin: auto;
+  height: 100vh;
+  background-color: rgb(13, 13, 27);
+  padding-top: 150px;
+  text-align: center;
+  padding-left: 25%;
+  padding-right: 25%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.last h2{
+  color: coral;
+  font-size: 48px;
+}
+
+.last p {
+  font-size: 20px;
+  margin-top: 80px;
+  color: white;
+  margin-bottom: 80px;
+}
+
+.image-container {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.image-container img {
+  position: relative;
+  width: 100%;
+  transform: translateY(-50%);
+  border-radius: 50%;
+}
+
+footer {
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: coral;
+}
+
+footer div {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+footer a {
+  color: black;
 }
